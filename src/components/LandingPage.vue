@@ -1,12 +1,15 @@
 <template>
   <main class="d-flex">
     <section class="d-flex">
-    <div id="perfil" class="d-flex ml-10 mt-10">
-      <img src="/src/assets/artist-img.png" alt="Billie Eilish" class="perfil">
-    </div>
-    <Info/>
-    <Category/>
+      <div id="perfil" class="d-flex ml-10 mt-10">
+        <img src="/src/assets/artist-img.png" alt="Billie Eilish" class="perfil">
+      </div>
+      <Info/>
+      <Category/>
   </section>
+  <aside class="d-flex">
+    <div></div>
+  </aside>
   </main>
 </template>
 
