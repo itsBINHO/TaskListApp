@@ -1,27 +1,27 @@
 <template>
   <main class="d-flex">
-    <section class="d-flex">
-      <div id="perfil" class="d-flex ml-10 mt-10">
-        <img src="/src/assets/artist-img.png" alt="Billie Eilish" class="perfil">
+    <section>
+      <div class="d-flex" id="containerTop">
+        <div id="perfil" class="d-flex ml-10 mt-10">
+          <img src="/src/assets/artist-img.png" alt="Billie Eilish" class="perfil">
+        </div>
+        <Info/>
+        <Category/>
       </div>
-      <Info/>
-      <Category/>
-  </section>
-  <aside class="d-flex">
-    <div></div>
-  </aside>
+      <Library/>
+    </section>
+    <Aside/>
   </main>
 </template>
 
-<script>
-  import Info from './Info.vue';
-  import Category from './Category.vue';
-</script>
+<script></script>
 
 <style>
 
-  main {
-    background: linear-gradient(to right,#000000, #2D1C1C, #6A2525);
+  section {
+    background: linear-gradient(to right,#000000, #3b1e1e, #6A2525);
+    height: 100vh;
+    width: 75vw;
     color: white;
   }
 
