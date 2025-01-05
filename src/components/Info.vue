@@ -23,6 +23,11 @@ import Artist from './Artist.vue';
 </script>
 
 <style>
+
+  .info {
+    margin-left: 2em;
+  }
+
   a {
     text-decoration: none;
     color: #6687FF;

@@ -6,8 +6,6 @@
 
 <script>
 
-import Info from './Info.vue';
-
   export default {
     name: 'Artist',
     props: {

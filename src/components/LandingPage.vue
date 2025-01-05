@@ -7,6 +7,7 @@
         <Category/>
       </div>
       <Library/>
+      <Musics />
     </section>
     <Aside/>
   </main>
