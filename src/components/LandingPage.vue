@@ -2,17 +2,17 @@
   <main class="d-flex">
     <section>
       <div class="d-flex" id="containerTop">
-        <Artist/>
-        <Info/>
-        <Category/>
+        <Artist :nome="nome"/>
       </div>
       <Library/>
-      <Musics />
     </section>
     <Aside/>
   </main>
 </template>
 
+<script>
+import Artist from './Artist.vue';
+</script>
 <style>
   section {
     background: linear-gradient(to right,#000000, #3b1e1e, #6A2525);

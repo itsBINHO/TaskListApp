@@ -6,14 +6,10 @@
         Gen Z artist <a href="#">MORE</a></h4>
       </div>
 </template>
-<script>
-import Artist from './Artist.vue';
 
+<script>
   export default {
     name: 'Info',
-    components: {
-      Artist
-    },
       data() {
         return {
           nome: 'Billie Eilish',

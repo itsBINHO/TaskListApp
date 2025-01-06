@@ -1,6 +1,6 @@
 <template>
   <div id="aside">
-    <h2>Search</h2>
+    <h2></h2>
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 
 <style>
   #aside {
-    background: linear-gradient(#993737, #743131);
+    background: linear-gradient(#be3b3b, #8f1818);
     width: 25vw;
     position: relative;
   }

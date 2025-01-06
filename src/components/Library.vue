@@ -24,9 +24,12 @@
       </div>
     </div>
   </div>
+  <Musics/>
 </template>
 
 <script>
+import Musics from './Musics.vue';
+
   export default {
     name: 'Library'
   }
