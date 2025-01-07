@@ -2,7 +2,7 @@
   <main class="d-flex">
     <section>
       <div class="d-flex" id="containerTop">
-        <Artist :nome="nome"/>
+        <Artist/>
       </div>
       <Library/>
     </section>
@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import Artist from './Artist.vue';
 </script>
 <style>
   section {
@@ -20,4 +19,10 @@ import Artist from './Artist.vue';
     width: 75vw;
     color: white;
   }
+  html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Desativa a rolagem */
+  height: 100%;
+}
 </style>

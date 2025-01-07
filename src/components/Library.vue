@@ -5,7 +5,7 @@
     <div class="albumInfo">
       <h2>Super Cell</h2>
       <p>2019</p>
-      <p>4 songs</p>
+      <p>6 songs</p>
       <div class="buttons-track d-flex mt-2 ">
       <v-btn variant="plain">
         <a href="#">
@@ -39,12 +39,12 @@ import Musics from './Musics.vue';
   #containerLibrary {
     display: flex;
     padding: 2em;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 
   h2.title {
     margin-top: 3rem;
-    margin-left: 6rem;
+    margin-left: 3rem;
   }
 
   .albumInfo {
