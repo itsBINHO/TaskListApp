@@ -3,9 +3,11 @@
     <v-row class="card">
       <v-col v-for="(item, index) in items" :key="index" class="customList pa-4">
         {{ tier[index]?.number }}
+        <div class="sizeBtn">
         <btn class="file">
           {{ item.name }}
         </btn>
+      </div>
         <a href="https://open.spotify.com/intl-pt/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank">Billie Eilish</a>
       </v-col>
     </v-row>
@@ -80,12 +82,20 @@ export default {
   flex-direction: column;
   width: 65vw;
 }
+.customList {
+  display: flex;
+}
+.sizeBtn {
+  width: 20%;
+}
 .file {
   padding: 1.7em;
 }
 .customList a {
+  margin-left: 30%;
   color: #494444;
-  font-size: small;
+  font-size: .8em;
+  text-decoration: underline;
 }
 .customList:hover {
   background-color: #5e5e5e2f;
