@@ -1,7 +1,7 @@
 <template>
-  <div class="songList">
+  <div class="songList d-flex">
     <v-row class="card">
-      <v-col v-for="(item, index) in items" :key="index" class="customList pa-4">
+      <v-col v-for="(item, index) in items" :key="index" class="customList">
         {{ tier[index]?.number }}
         <div class="sizeBtn">
         <btn class="file">
@@ -9,6 +9,9 @@
         </btn>
       </div>
         <a href="https://open.spotify.com/intl-pt/artist/6qqNVTkY8uBg9cP3Jd7DAH" target="_blank">Billie Eilish</a>
+        <div class="LogoList">
+          <img :src="getLogoById(item.id)" alt="Logo">
+        </div>
       </v-col>
     </v-row>
   </div>
@@ -20,7 +23,7 @@ export default {
   data: () => ({
     items: [
       {
-        name: "WILDFLOWER",
+        name: "Bad Guy",
         id: 1,
       },
       {
@@ -28,16 +31,12 @@ export default {
         id: 2,
       },
       {
-        name: "CHIHIRO",
+        name: "Ocean Eyes",
         id: 3,
       },
       {
-        name: "Your Power",
+        name: "Hot Lines",
         id: 4,
-      },
-      {
-        name: "Ocean eyes",
-        id: 5,
       },
     ],
     tier: [
@@ -53,20 +52,31 @@ export default {
       { number: "4",
         id: 4,
         },
-      { number: "5",
-        id: 5,
-        },
       ],
-    }),
-  created() {
-    this.syncTier();
-  },
+    albumMusic: [
+      {
+        logoMusic: 'src/assets/badGuyLogo.png',
+        id: 1,
+      },
+      {
+        logoMusic: 'src/assets/lovelyLogo.png',
+        id: 2,
+      },
+      {
+        logoMusic: 'src/assets/oceanEyesLogo.png',
+        id: 3,
+      },
+      {
+        logoMusic: 'src/assets/hotLinesLogo.png',
+        id: 4,
+      },
+    ]
+  }),
+  
   methods: {
-    syncTier() {
-      // Garante que tier seguirá a ordem numérica de `items`
-      this.tier = this.items
-        .sort((a, b) => Number(a.id) - Number(b.id)) // Ordena os itens por ID numérico
-        .map((item) => ({ number: String(item.id) })); // Cria um array tier
+    getLogoById(id) {
+      const logoItem = this.albumMusic.find((album) => album.id === id);
+      return logoItem ? logoItem.logoMusic : ""; 
     },
   },
 };
@@ -80,10 +90,12 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  width: 65vw;
+  
 }
 .customList {
   display: flex;
+  height: 4em;
+  align-items: center;
 }
 .sizeBtn {
   width: 20%;
@@ -100,5 +112,15 @@ export default {
 .customList:hover {
   background-color: #5e5e5e2f;
   cursor: pointer;
+}
+.LogoList {
+  display: flex;
+  padding: 10px;
+  margin-left: 39%;
+}
+.LogoList img {
+  width: 60px; 
+  height: auto; 
+  object-fit: contain;
 }
 </style>
