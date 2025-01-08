@@ -5,7 +5,7 @@
     <div class="albumInfo">
       <h2>Super Cell</h2>
       <p>2019</p>
-      <p>6 songs</p>
+      <p>4 songs </p>
       <div class="buttons-track d-flex mt-2 ">
       <v-btn variant="plain">
         <a href="#">

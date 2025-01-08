@@ -10,7 +10,7 @@
 <script>
   export default {
     name: 'Info',
-      data() {
+      data: () => {
         return {
           nome: 'Billie Eilish',
       }
@@ -29,7 +29,7 @@
     color: #6687FF;
   }
 
-  h4 {
+  .info h4 {
     color: rgb(152, 158, 163);
   }
 </style>

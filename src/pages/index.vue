@@ -2,6 +2,6 @@
   <LandingPage />
 </template>
 
-<script setup>
+<script>
   //
 </script>

@@ -12,7 +12,7 @@ import Category from './Category.vue';
 
   export default {
     name: 'Artist',
-      data() {
+      data: () => {
         return {
           logo: 'src/assets/artist-img.png',
         }
