@@ -21,31 +21,31 @@ export default {
   data: () => ({
     menuIcons: [
       {
-        icon: '',
+        icon: 'src/assets/headphone.svg',
         id: 1,
       },
       {
-        icon: '',
+        icon: 'src/assets/explorer.svg',
         id: 2,
       },
       {
-        icon: '',
+        icon: 'src/assets/radio.svg',
         id: 3,
       },
       {
-        icon: '',
+        icon: 'src/assets/playBtn.svg',
         id: 4,
       },
       {
-        icon: '',
+        icon: 'src/assets/album.svg',
         id: 5,
       },
       {
-        icon: '',
+        icon: 'src/assets/',
         id: 6,
       },
       {
-        icon: '',
+        icon: 'src/assets/',
         id: 7,
       },
     ],

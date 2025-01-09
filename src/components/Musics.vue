@@ -8,6 +8,7 @@
             {{ item.name }}
           </btn>
         </div>
+        
         <a
           href="https://open.spotify.com/intl-pt/artist/6qqNVTkY8uBg9cP3Jd7DAH"
           target="_blank"
