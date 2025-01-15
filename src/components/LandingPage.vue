@@ -5,6 +5,8 @@
         <Artist/>
       </div>
       <Library/>
+      <Musics/>
+      <Player/>
     </section>
     <Aside/>
   </main>

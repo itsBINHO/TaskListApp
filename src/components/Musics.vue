@@ -1,21 +1,20 @@
 <template>
   <div class="songList d-flex">
     <v-row class="card">
-      <v-col v-for="(item, index) in items" :key="index" class="customList">
-        {{ tier[index]?.number }}
+      <v-col v-for="(music, index) in music" :key="index" class="customList">
+        {{ music.tier }}
         <div class="sizeBtn">
           <btn class="file">
-            {{ item.name }}
+            {{ music.name }}
           </btn>
         </div>
-        
         <a
           href="https://open.spotify.com/intl-pt/artist/6qqNVTkY8uBg9cP3Jd7DAH"
           target="_blank"
           >Billie Eilish</a
         >
         <div class="LogoList">
-          <img :src="getLogoById(item.id)" alt="Logo" />
+          <img :src="music.logoMusic" alt="Logo" />
         </div>
       </v-col>
     </v-row>
@@ -26,57 +25,34 @@
 export default {
   name: "Musics",
   data: () => ({
-    items: [
+    music: [
       {
         name: "Bad Guy",
         id: 1,
+        tier: "1",
+        logoMusic: "src/assets/badGuyLogo.png",
       },
       {
         name: "Lovely",
         id: 2,
+        tier: "2",
+        logoMusic: "src/assets/lovelyLogo.png",
       },
       {
         name: "Ocean Eyes",
         id: 3,
+        tier: "3",
+        logoMusic: "src/assets/oceanEyesLogo.png",
       },
       {
         name: "Hot Lines",
         id: 4,
-      },
-    ],
-    tier: [
-      { number: "1", id: 1 },
-      { number: "2", id: 2 },
-      { number: "3", id: 3 },
-      { number: "4", id: 4 },
-    ],
-    albumMusic: [
-      {
-        logoMusic: "src/assets/badGuyLogo.png",
-        id: 1,
-      },
-      {
-        logoMusic: "src/assets/lovelyLogo.png",
-        id: 2,
-      },
-      {
-        logoMusic: "src/assets/oceanEyesLogo.png",
-        id: 3,
-      },
-      {
+        tier: "4",
         logoMusic: "src/assets/hotLinesLogo.png",
-        id: 4,
       },
     ],
   }),
-
-  methods: {
-    getLogoById(id) {
-      const logoItem = this.albumMusic.find((album) => album.id === id);
-      return logoItem ? logoItem.logoMusic : "";
-    },
-  },
-};
+}
 </script>
 
 <style>
