@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
+    "play-sound": "^1.1.6",
     "roboto-fontface": "*",
     "vue": "^3.4.31",
     "vuetify": "^3.6.14"

@@ -4,7 +4,7 @@
       <v-col v-for="(music, index) in music" :key="index" class="customList">
         {{ music.tier }}
         <div class="sizeBtn">
-          <btn class="file">
+          <btn class="file" @click="playMusic()">
             {{ music.name }}
           </btn>
         </div>
@@ -31,28 +31,28 @@ export default {
         id: 1,
         tier: "1",
         logoMusic: "src/assets/badGuyLogo.png",
-        path: "src/assets/badGuy.mp3",
+        path: "src/assets/BillieEilish-badguy.mp3",
       },
       {
         name: "Lovely",
         id: 2,
         tier: "2",
         logoMusic: "src/assets/lovelyLogo.png",
-        path: "src/assets/lovely.mp3",
+        path: "src/assets/BillieEilish-lovely.mp3",
       },
       {
         name: "Ocean Eyes",
         id: 3,
         tier: "3",
         logoMusic: "src/assets/oceanEyesLogo.png",
-        path: "src/assets/oceanEyes.mp3",
+        path: "src/assets/BillieEilish-OceanEyes.mp3",
       },
       {
-        name: "Hot Lines",
+        name: "hotline",
         id: 4,
         tier: "4",
         logoMusic: "src/assets/hotLinesLogo.png",
-        path: "src/assets/hotLines.mp3",
+        path: "src/assets/BillieEilish-hotline.mp",
       },
     ],
   }),

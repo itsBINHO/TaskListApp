@@ -5,9 +5,10 @@
         <img src="#"/>
       </div>
       <div class="player-controls">
-        <i class="fa-solid fa-backward" title="Previous" id="prev"></i>
-        <i class="fa-solid fa-play play-button" title="Play" id="play"></i>
-        <i class="fa-solid fa-forward" title="Next" id="next"></i>
+        <i class="fa-solid fa-backward" title="Previous" id="prev" @click="previousMusic()"></i>
+        <i class="fa-solid fa-play play-button" title="Play" id="play" @click="playMusic()"></i>
+        <i class="fa-solid fa-forward" title="Next" id="next" 
+        @click="nextMusic()"></i>
       </div>
       <div class="volumeBar"></div>
     </v-col>
@@ -26,16 +27,11 @@
 <script>
 export default {
   name: "Player",
-  data: () => ({
-    songs: [
-      {
-        
-      }
-    ]
-  }),
+  
   methods: {
     playMusic() {
-      
+      const audio = new Audio(require("src/assets/BillieEilish-badguy.mp3"));
+      audio.play()
     },
     pauseMusic() {
       
