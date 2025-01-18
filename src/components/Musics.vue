@@ -4,7 +4,7 @@
       <v-col v-for="(music, index) in music" :key="index" class="customList">
         {{ music.tier }}
         <div class="sizeBtn">
-          <btn class="file" @click="playMusic()">
+          <btn class="file">
             {{ music.name }}
           </btn>
         </div>
