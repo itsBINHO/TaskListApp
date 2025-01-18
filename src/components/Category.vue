@@ -18,4 +18,23 @@
     margin-top: 80px;
     margin-left: 27vw;
   }
+  @media (max-width: 768px) {
+  .category {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 2em;
+    margin-left: 2vw;
+  }
+}
+@media (max-width: 480px) {
+  .category {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 2em;
+    margin-left: 1vw;
+  }
+}
 </style>

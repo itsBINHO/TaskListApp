@@ -63,4 +63,9 @@ import Musics from './Musics.vue';
     padding: 3px;
     margin-bottom: 2px;
   }
+  @media (max-width: 480px) {
+  .albumInfo {
+    margin-left: 2rem;
+  }
+}
 </style>

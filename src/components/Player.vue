@@ -96,4 +96,24 @@ export default {
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 480px) {
+  .footerButtons {
+    width: 100%;
+    height: 10vh;
+    display: none;
+  }
+  .player-controls {
+    display: flex;
+    align-items: center;
+    margin-left: 30vw;
+    width: 100%;
+    height: 17px;
+  }
+  .volumeBar {
+    display: none;
+  }
+  .AlbumTrack {
+    display: none;
+  }
+}
 </style>

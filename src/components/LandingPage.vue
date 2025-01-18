@@ -27,4 +27,9 @@
   overflow: hidden; /* Desativa a rolagem */
   height: 100%;
 }
+@media (max-width: 1550px) {
+  section {
+    width: 100vw;
+  }
+}
 </style>

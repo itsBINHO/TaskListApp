@@ -99,4 +99,18 @@ export default {
   height: auto;
   object-fit: contain;
 }
+@media (max-width: 768px) {
+  .LogoList {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .songList {
+    margin-left: 0;
+  }
+  .file {
+   display: flex;
+   padding: 2em;
+  }
+}
 </style>

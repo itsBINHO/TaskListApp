@@ -155,4 +155,12 @@ export default {
   margin-top: 2.5em;
   /* Adicione outros estilos para o penúltimo item */
 }
+@media (max-width: 1550px) {
+  .bar {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  
+}
 </style>

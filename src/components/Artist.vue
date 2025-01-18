@@ -24,4 +24,10 @@ import Category from './Category.vue';
   img.perfil {
     cursor: pointer;
   }
+  @media (max-width: 480px) {
+    #perfil {
+      width: 140px;
+      height: 140px;
+    }
+}
 </style>
